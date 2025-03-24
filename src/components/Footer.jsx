@@ -1,7 +1,5 @@
 import FooterImg from "../assets/images/truest-footerImg.png"
-import Xicon from "../assets/images/xIcon.png"
-import Discord from "../assets/images/dicIcn.png";
-import Email from "../assets/images/emailicon.png";
+
 
 const Footer = () => {
     return (
@@ -23,8 +21,8 @@ const Footer = () => {
             {/* Right Side */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 md:mt-0">
               
-              {/* Social Section */}
-              <div>
+            {/* Social Section */}
+            <div>
                 <h3 className="text-lg font-bold">Social</h3>
                 <ul className="mt-2 space-y-1 text-gray-400">
                   <li><a href="/" className="hover:text-white flex">Discord</a></li>
