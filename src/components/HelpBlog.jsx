@@ -55,6 +55,7 @@ const HelpBlogCard = ({ title, description, buttons, blogPosts }) => {
 };
 
 const HelpBlogSection = () => {
+  let niamat =0;
   return (
     <section
       id="help-blog"
