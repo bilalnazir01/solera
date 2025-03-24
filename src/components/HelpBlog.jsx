@@ -1,7 +1,6 @@
-import React from 'react';
 
-// Assuming you have the image in the 'public/assets/images' directory
-import backgroundImage from '../assets/images/earthimg.png';  // adjust this path if needed
+
+import backgroundImage from '../assets/images/earthimg.png';
 
 const helpBlogData = [
   {
@@ -9,8 +8,8 @@ const helpBlogData = [
     description:
       "Explore our Help Center for quick fixes, tutorials, and troubleshooting assistance.",
     buttons: [
-      { text: "Contact Us", style: "bg-white text-black" },
-      { text: "FAQ", style: "border border-white text-white" },
+      { text: "Contact Us", style: "bg-white text-[16px] font-semibold leading-[150%] tracking-[-0.32px] text-black px-5 py-[14px]" },
+      { text: "FAQ", style: "border border-white bg-white text-[16px] font-semibold leading-[150%] tracking-[-0.32px] text-black px-5 py-[14px]" },
     ],
   },
   {
@@ -25,15 +24,15 @@ const helpBlogData = [
 
 const HelpBlogCard = ({ title, description, buttons, blogPosts }) => {
   return (
-    <div className="bg-[rgba(78,78,78,0.3)] text-white backdrop-blur-2xl rounded-2xl py-[32px] px-[42px] relative overflow-hidden">
+    <div className="bg-[rgba(78,78,78,0.3)] text-white backdrop-blur-2xl rounded-[16px] py-[32px] px-[42px] mx-4 relative overflow-hidden">
       <h2 className="font-sora font-semibold text-[24px] leading-[166.67%] mb-3 tracking-[-0.48px]">{title}</h2>
 
       {description && <p className="font-dm-sans text-[16px] leading-[187.5%] mb-[143px]">{description}</p>}
 
       {buttons && (
-        <div className="mt-4 flex gap-4 items-bottom">
+        <div className="mt-4 flex sm:flex-row flex-col gap-5 items-bottom">
           {buttons.map((btn, index) => (
-            <button key={index} className={`${btn.style} px-4 py-2 w-[140px] rounded-3xl font-medium`}>
+            <button key={index} className={`${btn.style} px-4 w-full max-w-[400px] md:px-4 py-[14px] sm:w-[140px] rounded-3xl font-medium`}>
               {btn.text}
             </button>
           ))}
@@ -50,7 +49,7 @@ const HelpBlogCard = ({ title, description, buttons, blogPosts }) => {
         </ul>
       )}
 
-      <div className="absolute top-6 right-6 text-orange-500 text-5xl">→</div>
+      <div className="absolute top-6 right-6 text-[#FF4D00] text-3xl lg:text-5xl">→</div>
     </div>
   );
 };
@@ -59,7 +58,7 @@ const HelpBlogSection = () => {
   return (
     <section
       id="help-blog"
-      className="px-6 pt-[187px] pb-[144px] relative bg-cover bg-center bg-no-repeat z-5"
+      className="pt-[112px] md:pt-[187px] md:pb-[144px] pb-[101px] relative bg-cover bg-center bg-no-repeat z-5"
       style={{ backgroundImage: `url(${backgroundImage})` }} // background image applied here
     >
       <div className="w-full max-w-[1180px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
