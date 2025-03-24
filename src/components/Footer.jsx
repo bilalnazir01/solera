@@ -5,7 +5,7 @@ import EmailIcom from "../assets/images/emailicon.png";
 
 const Footer = () => {
     return (
-        <footer className="p-4 bg-black">
+        <footer className="px-[31px] bg-black">
           <div className="flex text-white w-full max-w-[1180px] mx-auto flex-col md:flex-row justify-between items-start md:items-center">
             
             {/* Left Side */}

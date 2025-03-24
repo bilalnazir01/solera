@@ -6,10 +6,10 @@ export const WelcomeSection = () => {
   return (
     <section
     id="welcome"
-    className="bg-bottom bg-cover shadow-[0_-4px_10px_rgba(0,0,0,0.9)]"
+    className="bg-bottom bg-cover shadow-[0_-4px_10px_rgba(0,0,0,0.9)] mt-[137px]"
     style={{ backgroundImage: `url(${welcomeBg})` }}
   >
-    <div className="bg-gradient-to-b from-black flex flex-col justify-center text-white">
+    <div className="bg-gradient-to-b from-black flex flex-col justify-center text-white px-7">
       <h1 className="font-sora text-center font-semibold text-[32px] lg:text-[36px] tracking-[-2%] leading-[166%] lg:leading-[250%] mb-2">
         Welcome to Solera.
       </h1>

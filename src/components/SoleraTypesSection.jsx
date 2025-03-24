@@ -43,14 +43,14 @@ const SoleraTypesSection = () => {
       }}
     >
       <div className='max-w-[1180px] w-full mx-auto'>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 justify-center gap-6 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 justify-center gap-6 mb-6 mx-[30px]">
           <Card
             image={FirstCard}
             title="Solera Savings"
             description="Savings App for Anyone Anywhere Powered by Defi and RWAfi rails"
             imageWidth="w-[196px]"
             imageHeight="h-auto"
-            imagePadding="px-[192px] pt-[64px] pb-[21px]"
+            imagePadding="px-[92px] lg:px-[192px] pt-[53px] lg:pt-[64px] pb-[21px]"
             titleSize="text-[24px] sm:text-[32px] md:text-[36px]"
             descSize="text-[16px] sm:text-[16px] md:text-[18px]"
           />
@@ -60,20 +60,20 @@ const SoleraTypesSection = () => {
             description="Overcollateralized lending market"
             imageWidth="w-[321px]"
             imageHeight="h-auto"
-            imagePadding="pt-[60px] px-[130px] pb-[22px]"
+            imagePadding="pt-[53px] lg:pt-[60px] px-[30px] lg:px-[130px] pb-[22px]"
             titleSize="text-[24px] sm:text-[30px] md:text-[34px]"
             descSize="text-[16px] sm:text-[15px] md:text-[17px]"
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-[30px]">
           <Card
             image={ThirdCard}
             title="Solera Swap"
             description="Integrations with Dex + LP tokens"
             imageWidth="w-[200px]"
             imageHeight="h-auto"
-            imagePadding="pt-[61px] px-[90px] pb-[34px]"
+            imagePadding="pt-[61px] px-[90px] pb-[39px] lg:pb-[34px]"
             titleSize="text-[20px] sm:text-[28px] md:text-[32px]"
             descSize="text-[14px] sm:text-[14px] md:text-[16px]"
           />
@@ -83,7 +83,7 @@ const SoleraTypesSection = () => {
             description="Liquid staking for PLUME token"
             imageWidth="w-[217px]"
             imageHeight="h-auto"
-            imagePadding="pt-[37px] pl-[72px] pr-[91px] pb-[18px]"
+            imagePadding="pt-[43px] lg:pt-[37px] pl-[8px] lg:pl-[72px] pr-[82px] lg:pr-[91px] pb-[18px]"
             titleSize="text-[20px] sm:text-[26px] md:text-[30px]"
             descSize="text-[14px] sm:text-[13px] md:text-[15px]"
           />
@@ -93,9 +93,9 @@ const SoleraTypesSection = () => {
             description="Yield interface and strategy optimizer"
             imageWidth="w-[200px]"
             imageHeight="h-auto"
-            imagePadding="pt-[61px] px-[90px] pb-[36px]"
+            imagePadding="pt-[61px] px-[90px] pb-[42px] lg:pb-[36px]"
             titleSize="text-[20px] sm:text-[24px] md:text-[28px]"
-            descSize="text-[24px] sm:text-[12px] md:text-[14px]"
+            descSize="lg:text-[24px] md:text-18px text-[14px]"
           />
         </div>
       </div>

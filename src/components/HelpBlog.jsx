@@ -9,7 +9,7 @@ const helpBlogData = [
       "Explore our Help Center for quick fixes, tutorials, and troubleshooting assistance.",
     buttons: [
       { text: "Contact Us", style: "bg-white text-[16px] font-semibold leading-[150%] tracking-[-0.32px] text-black px-5 py-[14px]" },
-      { text: "FAQ", style: "border border-white bg-white text-[16px] font-semibold leading-[150%] tracking-[-0.32px] text-black px-5 py-[14px]" },
+      { text: "FAQ", style: "border border-white text-[16px] font-semibold leading-[150%] tracking-[-0.32px] text-white px-5 py-[14px]" },
     ],
   },
   {
@@ -55,7 +55,6 @@ const HelpBlogCard = ({ title, description, buttons, blogPosts }) => {
 };
 
 const HelpBlogSection = () => {
-  let niamat =0;
   return (
     <section
       id="help-blog"

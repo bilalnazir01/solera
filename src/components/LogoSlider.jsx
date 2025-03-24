@@ -51,7 +51,7 @@ export default function LogoSlider() {
     <div className="w-full overflow-hidden bg-transparent pb-7 mt-[157px]">
       <motion.div
         ref={sliderRef}
-        className="flex w-max gap-[99px]"
+        className="flex w-max gap-[50px] md:gap[64px] lg:gap-[99px]"
         animate={{ x: [0, -100] }}
         transition={{ ease: "linear", repeat: Infinity, duration: 10 }}
       >
