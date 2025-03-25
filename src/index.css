@@ -2,7 +2,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
+/* Sora */
  @font-face {
   font-family: 'Sora';
   src: url('./assets/fonts/Sora-Regular.ttf') format('truetype'); 
@@ -16,6 +16,50 @@
   font-weight: 500;
   font-style: normal;
 } 
+@font-face {
+  font-family: "Sora";
+  src: url('./assets/fonts/Sora-SemiBold.ttf') format(truetype);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url('./assets/fonts/DMSans-Regular.ttf') format(truetype);
+  font-weight: 400;
+  font-size: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url('./assets/fonts/DMSans-Medium.ttf') format(truetype);
+  font-weight: 500;
+  font-size: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url('./assets/fonts/DMSans-Bold.ttf') format(truetype);
+  font-weight: 700;
+  font-size: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url('./assets/fonts/DMSans-SemiBold.ttf') format(truetype);
+  font-weight: 600;
+  font-size: normal;
+}
+@font-face {
+  font-family: "AlbertSans";
+  src: url('./assets/fonts/AlbertSans-Regular.ttf') format(truetype);
+  font-weight: 400;
+  font-size: normal;
+}
+@font-face {
+  font-family: "AlbertSans";
+  src: url('./assets/fonts/DMSans-Medium.ttf') format(truetype);
+  font-weight: 500;
+  font-size: normal;
+}
+
+
 
 body {
   font-family: 'Sora', sans-serif;
@@ -35,4 +79,18 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.module {
+  max-width: 250px;
+  padding: 1rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 40%
 }

@@ -8,6 +8,8 @@ module.exports = {
       screens: {
         zero: "0px",
         300: "300px",
+        375: "375px",
+        640: "640px",
         768: "768px",
         1024: "1024px",
         1160: "1160px",
@@ -18,6 +20,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Sora", "sans-serif"],
+        'dm-sans': ["DMSans", "sans-serif"],
+        'albertsans': ["AlbertSans", "sans-serif"],
       },
       padding: {
         custom: "10px"

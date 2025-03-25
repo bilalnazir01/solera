@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
     
           {/* Bottom Line */}
-          <div className="text-[10px] leading-[120%] text-[#FFF] font-DM Sans mt-[84px] lg:mt-[142px] w-full max-w-[1180px] mx-auto">
+          <div className="text-[14px] leading-[120%] text-[#FFF] font-DM Sans mt-[84px] lg:mt-[142px] w-full max-w-[1180px] mx-auto">
             © 2025 Solera. All rights reserved.
           </div>
         </footer>

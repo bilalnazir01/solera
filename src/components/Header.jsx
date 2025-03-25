@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Logo from "../assets/images/solera.png";
+import ResLogo from "../assets/images/r-logo.png";
 import navErrowIcon from "../assets/images/navErrowIcon.png"
 
 const Header = () => {
@@ -24,13 +25,18 @@ const Header = () => {
             <img
               src={Logo}
               alt="SalenoLogo"
-              className="w-full max-w-[84px]"
+              className="w-full h-[21px] max-w-[84px] hidden lg:block"
+            />
+            <img
+              src={ResLogo}
+              alt="SalenoLogo"
+              className="h-[36px] w-[36px] block lg:hidden"
             />
           </NavLink>
 
           {/* Main Navigation */}
           <nav
-            className={`flex items-center justify-center flex-col lg:rounded-[80px] max-xl:py-3 font-albert
+            className={`flex items-center justify-center flex-col lg:rounded-[80px] max-xl:py-3 font-albertsans text-sm
               lg:flex-row gap-5 lg:gap-0 max-w-[507px] max-xl:max-w-[380px] max-lg:max-w-[calc(200%-200px)] 
               w-full fixed lg:static top-0 transition-all duration-500 h-full lg:h-auto
               max-lg:bg-primaryLight backdrop:blur-lg z-10 lg:z-auto
@@ -69,7 +75,7 @@ const Header = () => {
             <li>
               <NavLink
                 to="/"
-                className="btn bg-gradient-to-b text-white font-medium flex items-center justify-center"
+                className="btn bg-gradient-to-b text-white text-[18px] font-albertsans font-medium flex items-end justify-center"
                 onClick={() => setMenuOpen(false)}
               >
                 GO to the App
@@ -79,7 +85,7 @@ const Header = () => {
           </ul> 
            {/* Hamburger Button - Appears at lg */}
            <button
-            className="lg:hidden text-white z-20 relative"
+            className="lg:hidden text-white z-20 relative "
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <div
